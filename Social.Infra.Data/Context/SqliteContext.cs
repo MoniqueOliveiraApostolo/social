@@ -12,7 +12,7 @@ namespace Social.Infra.Data.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlite("Server=[SERVIDOR];Port=[PORTA];Database=modelo;Uid=[USUARIO];Pwd=[SENHA]");
+                optionsBuilder.UseSqlite("Data Source=Social.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
