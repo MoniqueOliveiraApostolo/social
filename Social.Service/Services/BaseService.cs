@@ -32,13 +32,13 @@ namespace Social.Service.Services
 
         public IList<T> Get() => repository.SelectAll();
 
-        public T Post<V>(T obj)
+        public T Post(T obj)
         {
             repository.Insert(obj);
             return obj;
         }
 
-        public T Put<V>(T obj) 
+        public T Put(T obj) 
         {
             repository.Update(obj);
             return obj;
