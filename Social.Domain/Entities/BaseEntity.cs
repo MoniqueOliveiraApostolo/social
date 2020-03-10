@@ -8,6 +8,6 @@ namespace Social.Domain.Entities
     {
         public virtual int Id { get; set; }
         public virtual DateTime DataCadastro { get; set; }
-        public virtual int IdUsuarioCadastro { get; set; }
+
     }
 }

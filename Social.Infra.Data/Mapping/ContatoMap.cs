@@ -17,10 +17,6 @@ namespace Social.Infra.Data.Mapping
                 .IsRequired()
                 .HasColumnType("datetime");
 
-            builder.Property(c => c.IdUsuarioCadastro)
-                .IsRequired()
-                .HasColumnType("int");
-
             builder.Property(c => c.NomeContato)
                 .IsRequired()
                 .HasColumnType("varchar(120)");
